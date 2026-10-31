@@ -1,0 +1,4 @@
+import React from 'react';
+import {Page,T,Card,Btn,Row,Search,Chips,Service,C} from '../components/UI';
+import {servicios} from '../components/Datos';
+export default function InicioScreen(){return <Page tab="Inicio"><Row><T color={C.muted} size={12}>Martes 12 · ¡Buen día!</T><T>♧  ♧</T></Row><T size={24} bold>Hola, Carlos</T><Card style={{backgroundColor:C.green,marginTop:15}}><T color="white" size={11}>SALDO DISPONIBLE</T><Row><T size={28} color="white" bold>5 Horas</T><T color="white" bold>Mi monedero</T></Row><T size={11} color="white">5 créditos · 1 retenido en reserva</T><Btn outline color="white">+ Publicar</Btn></Card><Search/><Chips items={['Idiomas','Asesorías','Tecnología','Reparaciones']}/><Row><T bold size={18}>Recomendados para ti</T><T color={C.green}>Ver todos</T></Row>{servicios.slice(0,2).map((x,i)=><Service key={i} item={x}/>)}</Page>}
