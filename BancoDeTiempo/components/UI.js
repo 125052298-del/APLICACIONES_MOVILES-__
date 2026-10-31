@@ -216,6 +216,22 @@ export function Field({ label, value, multiline = false }) {
   );
 }
 
+export function Input({ multiline = false, style, ...props }) {
+  return (
+    <TextInput
+      {...props}
+      editable={false}
+      multiline={multiline}
+      placeholderTextColor="#9aa4b0"
+      style={[
+        s.input,
+        multiline && { minHeight: 88, textAlignVertical: 'top' },
+        style,
+      ]}
+    />
+  );
+}
+
 export function Stat({ value, label }) {
   return (
     <View style={{ alignItems: 'center', flex: 1 }}>
@@ -280,5 +296,17 @@ const s = StyleSheet.create({
     borderColor: '#e3e8ef',
     padding: 12,
     justifyContent: 'center',
+  },
+  input: {
+    minHeight: 46,
+    marginBottom: 12,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    backgroundColor: 'white',
+    borderRadius: 11,
+    borderWidth: 1,
+    borderColor: '#e3e8ef',
+    color: '#172033',
+    fontSize: 14,
   },
 });
