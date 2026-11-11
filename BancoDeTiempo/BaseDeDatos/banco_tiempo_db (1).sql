@@ -4,7 +4,7 @@
 -- Profesor: ISC Iván Isay Guerra López - UPQ
 -- ============================================================
 
-CREATE DATABASE IF NOT EXISTS banco_tiempo_db 
+CREATE DATABASE IF NOT EXISTS bancodetiempo
 DEFAULT CHARACTER SET utf8mb4 
 COLLATE utf8mb4_unicode_ci;
 

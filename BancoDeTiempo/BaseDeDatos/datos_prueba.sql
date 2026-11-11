@@ -3,7 +3,7 @@
 -- SCRIPT DE INSERCIÓN DE DATOS DE PRUEBA (INSERTs a todas las tablas)
 -- ============================================================
 
-USE banco_tiempo_db;
+USE bancodetiempo;
 
 -- 1. INSERT USUARIOS
 INSERT INTO usuarios (nombre, correo, password, rol, creditos_disponibles, creditos_reservados, credito_total_ganado, estado) VALUES

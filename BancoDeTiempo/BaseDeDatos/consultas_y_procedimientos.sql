@@ -3,7 +3,7 @@
 -- DEMOSTRACIÓN DE CONSULTAS Y PROCEDIMIENTOS ALMACENADOS
 -- ============================================================
 
-USE banco_tiempo_db;
+USE bancodetiempo;
 
 -- ============================================================
 -- 1. CONSULTAS SIMPLES (3 Requeridas)
